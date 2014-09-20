@@ -2,7 +2,7 @@
 # Sets the window title nicely no matter where you are
 function title() {
   # escape '%' chars in $1, make nonprintables visible
-  a=${(V)1//\%/\%\%}
+  local a=${(V)1//\%/\%\%}
 
   # Truncate command, and join lines.
   a=$(print -Pn "%40>...>$a" | tr -d "\n")
