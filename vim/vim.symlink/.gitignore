@@ -1,0 +1,4 @@
+# These are all managed by Vundle
+/bundle
+# ...except for Vundle itself, which is a submodule.
+!Vundle.vim

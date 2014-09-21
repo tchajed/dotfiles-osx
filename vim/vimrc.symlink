@@ -1,4 +1,31 @@
-syntax on
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-" Wrap gitcommit file types at the appropriate length
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+source ~/.vim/plugins.vim
+call vundle#end()
+
+set tabstop=4
+set shiftwidth=4
+
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+set termencoding=utf-8
+set laststatus=2
+
+if has('gui_running')
+	set background=light
+	set guifont=Inconsolata\ for\ Powerline:h13
+else
+	" terminal
+	set background=dark
+	set term=xterm-256color
+endif
+colorscheme solarized
+
+syntax on
 filetype indent plugin on

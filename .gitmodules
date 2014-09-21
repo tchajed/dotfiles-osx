@@ -4,3 +4,9 @@
 [submodule "vendor/dircolors-solarized"]
 	path = vendor/dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized
+[submodule "vim/vim.symlink/bundle/Vundle.vim"]
+	path = vim/vim.symlink/bundle/Vundle.vim
+	url = https://github.com/gmarik/Vundle.vim.git
+[submodule "vendor/powerline"]
+	path = vendor/powerline
+	url = https://github.com/Lokaltog/powerline
