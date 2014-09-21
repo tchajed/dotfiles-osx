@@ -22,6 +22,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'The-NERD-tree'
 Plugin 'sjl/gundo.vim'
+Plugin 'skwp/YankRing.vim'
 Plugin 'matchit.zip'
 
 " ------------------
@@ -30,6 +31,10 @@ Plugin 'matchit.zip'
 
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
+
+" Documentation
+Plugin 'rizzatti/dash.vim'
+Bundle 'Keithbsmiley/investigate.vim'
 
 " Primarily C++ development
 Plugin 'Valloric/YouCompleteMe'
@@ -61,3 +66,8 @@ Plugin 'groovy.vim'
 Plugin 'salinasv/vim-vhdl'
 Plugin 'applescript.vim'
 Plugin 'gnuplot.vim'
+
+" ------------------
+" Vim enhancements
+" ------------------
+Plugin 'godlygeek/tabular'
