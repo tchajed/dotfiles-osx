@@ -3,6 +3,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
 
+setopt EXTENDED_HISTORY # add timestamps to history
 setopt HIST_VERIFY # for history substitution (!^, !*, etc), substitute w/o executing
 setopt SHARE_HISTORY # share history between sessions ???
 

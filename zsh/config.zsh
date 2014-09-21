@@ -1,16 +1,15 @@
 eval `gdircolors $HOME/.dotfiles/vendor/dircolors-solarized/dircolors.ansi-dark`
 export CLICOLOR=true
 
-fpath=($ZSH/functions $fpath)
+fpath=($DOTFILES/functions $fpath)
 
-autoload -U $ZSH/functions/*(:t)
+autoload -U $DOTFILES/functions/*(:t)
 
 setopt NO_BG_NICE # don't nice background tasks
 setopt NO_HUP # don't send SIGHUP to background tasks on exit
 setopt NO_LIST_BEEP
 setopt LOCAL_OPTIONS # allow functions to have local options
 setopt LOCAL_TRAPS # allow functions to have local traps
-setopt EXTENDED_HISTORY # add timestamps to history
 setopt PROMPT_SUBST
 setopt COMPLETE_IN_WORD
 

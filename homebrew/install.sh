@@ -13,6 +13,14 @@ then
 fi
 
 # Install homebrew packages
-brew install grc coreutils spark
+if test ! $(which grc); then
+	brew install grc
+fi
+if test ! $(which gls); then
+	brew install coreutils
+fi
+if test ! $(which spark); then
+	brew install coreutils
+fi
 
 exit 0
