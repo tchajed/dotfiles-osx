@@ -17,6 +17,10 @@ setopt COMPLETE_IN_WORD
 #   like: git comm-[tab]
 setopt complete_aliases
 
+# automatically report time taken for commands that ran longer than $REPORTTIME
+# seconds
+REPORTTIME=5
+
 zle -N newtab
 
 bindkey '^[^[[D' backward-word
