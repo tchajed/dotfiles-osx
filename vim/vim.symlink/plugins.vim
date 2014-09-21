@@ -15,9 +15,9 @@ Plugin 'gmarik/Vundle.vim'
 " Pass the path to set the runtimepath properly.
 " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
-" ------------------
+" ==================
 " General
-" ------------------
+" ==================
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'The-NERD-tree'
@@ -25,28 +25,38 @@ Plugin 'sjl/gundo.vim'
 Plugin 'skwp/YankRing.vim'
 Plugin 'matchit.zip'
 
-" ------------------
+" ==================
 " Programming
-" ------------------
+" ==================
 
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 
-" Documentation
-Plugin 'rizzatti/dash.vim'
-Bundle 'Keithbsmiley/investigate.vim'
-
-" Primarily C++ development
+" --------------------
+" Awesome IDE features
+" --------------------
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'majutsushi/tagbar'
+" snippet engine
+Plugin 'SirVer/ultisnips'
+" snippets
+Plugin 'honza/vim-snippets'
+
+" C++ development
 Plugin 'a.vim'
 Plugin 'rhysd/vim-clang-format'
-Plugin 'majutsushi/tagbar' " also useful for Go
 
 " Git integration
 Plugin 'tpope/vim-fugitive'
 Plugin 'gregsexton/gitv'
 
+" Documentation interfaces
+Plugin 'rizzatti/dash.vim'
+Bundle 'Keithbsmiley/investigate.vim'
+
+" --------------------
 " Language syntax
+" --------------------
 " General Languages
 Plugin 'fatih/vim-go'
 Plugin 'JuliaLang/julia-vim'
