@@ -1,9 +1,9 @@
 eval `gdircolors $HOME/.dotfiles/vendor/dircolors-solarized/dircolors.ansi-dark`
 export CLICOLOR=true
 
-fpath=($DOTFILES/functions $fpath)
+fpath=($ZSH/functions $fpath)
 
-autoload -U $DOTFILES/functions/*(:t)
+autoload -U $ZSH/functions/*(:t)
 
 setopt NO_BG_NICE # don't nice background tasks
 setopt NO_HUP # don't send SIGHUP to background tasks on exit
