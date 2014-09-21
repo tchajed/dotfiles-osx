@@ -1,0 +1,12 @@
+#!/usr/bin/osascript
+
+# http://downloads.culturedcode.com/things/download/ThingsAppleScriptGuide.pdf
+
+on run argv
+	set AppleScript's text item delimiters to " "
+	set todo to argv as text
+	tell application "Things"
+		set newToDo to make new to do ¬
+			with properties { name: todo }
+end tell
+end run
