@@ -1,5 +1,10 @@
-set-option -g prefix C-a
-bind-key C-a last-window
+set-option -g prefix C-Space
+# C-Space a sends a literal ctrl-space
+bind-key Space send-prefix
+bind-key C-Space last-window
+
+bind-key t next-window
+bind-key T previous-window
 
 # Start numbering at 1
 set -g base-index 1
