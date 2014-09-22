@@ -42,6 +42,10 @@ Plugin 'SirVer/ultisnips'
 " snippets
 Plugin 'honza/vim-snippets'
 
+" OCaml
+" repl
+Plugin 'jpalardy/vim-slime'
+
 " C++ development
 Plugin 'a.vim'
 Plugin 'rhysd/vim-clang-format'
