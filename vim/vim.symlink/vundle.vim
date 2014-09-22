@@ -75,6 +75,9 @@ Plugin 'tpope/vim-markdown'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'leafgarland/typescript-vim'
 
+" LaTeX
+Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
+
 " Random languages
 Plugin 'groovy.vim'
 Plugin 'salinasv/vim-vhdl'
