@@ -1,6 +1,12 @@
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+
 " ocp-indent, code reformatting
-autocmd FileType ocaml source ~/.opam/system/share/typerex/ocp-indent/ocp-indent.vim
+autocmd FileType ocaml execute 'source' g:opamshare . "/vim/syntax/ocp-indent.vim"
 
 " merlin, auto-completion
-let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
+" loading merlin from a plugin file won't autoload the merlin plugin, so do so
+" manually: http://irclog.whitequark.org/ocaml/2014-07-12.txt (go to 16:08)
+runtime plugin/merlin.vim
+
+let g:syntastic_ocaml_checkers = ['merlin']

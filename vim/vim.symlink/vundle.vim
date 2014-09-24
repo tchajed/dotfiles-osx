@@ -74,6 +74,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-markdown'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'nginx.vim'
 
 " LaTeX
 Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
