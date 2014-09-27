@@ -3,5 +3,3 @@ export EDITOR='vim'
 export VISUAL='mvim'
 
 export GOBIN="$HOME/go/bin"
-
-eval `opam config env`
