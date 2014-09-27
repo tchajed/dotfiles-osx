@@ -24,6 +24,7 @@ Plugin 'The-NERD-tree'
 Plugin 'sjl/gundo.vim'
 Plugin 'skwp/YankRing.vim'
 Plugin 'matchit.zip'
+Plugin 'LargeFile'
 
 " ==================
 " Programming
