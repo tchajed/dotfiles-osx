@@ -7,6 +7,7 @@ call vundle#begin()
 source ~/.vim/vundle.vim
 call vundle#end()
 
+set expandtab
 set tabstop=4
 set shiftwidth=4
 
@@ -17,6 +18,18 @@ else
 	set background=dark
 endif
 colorscheme solarized
+
+" Run make on the document, after saving everything
+map ZM :wa<Enter>:!make<Enter>
+
+command! -nargs=0 WriteMode call WriteMode()
+function! WriteMode()
+  set lbr
+  map j gj
+  map k gk
+  map $ g$
+  map 0 g0
+endfunction
 
 syntax on
 filetype indent plugin on
