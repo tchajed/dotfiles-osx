@@ -22,9 +22,12 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'The-NERD-tree'
 Plugin 'sjl/gundo.vim'
-Plugin 'skwp/YankRing.vim'
 Plugin 'matchit.zip'
 Plugin 'LargeFile'
+
+" Search
+Plugin 'mileszs/ack.vim'
+Plugin 'nerdtree-ack'
 
 " ==================
 " Programming
@@ -86,7 +89,6 @@ Plugin 'nginx.vim'
 Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 
 " Random languages
-Plugin 'groovy.vim'
 Plugin 'salinasv/vim-vhdl'
 Plugin 'applescript.vim'
 Plugin 'gnuplot.vim'
