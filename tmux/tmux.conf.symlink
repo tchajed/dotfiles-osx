@@ -1,8 +1,9 @@
 set-option -g prefix C-Space
-# C-Space a sends a literal ctrl-space
+# C-Space sends a literal ctrl-space
 bind-key Space send-prefix
 bind-key C-Space next-window
 bind-key a last-window
+bind-key C-a last-window
 
 # Bind both releasing and holding control after prefix versions of these
 # commands
@@ -10,6 +11,11 @@ bind-key t next-window
 bind-key T previous-window
 bind-key C-t next-window
 bind-key C-T previous-window
+# Potential Kinesis Advantage keybindings
+# bind-key f next-window
+# bind-key C-f next-window
+# bind-key s previous-window
+# bind-key C-s previous-window
 
 # Start numbering at 1
 set -g base-index 1
