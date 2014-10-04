@@ -42,10 +42,16 @@ Plugin 'majutsushi/tagbar'
 Plugin 'SirVer/ultisnips'
 " snippets
 Plugin 'honza/vim-snippets'
+" Persistent, separate NERDTree
+Plugin 'jistr/vim-nerdtree-tabs'
 
 " OCaml
 " repl
 Plugin 'jpalardy/vim-slime'
+
+" GoLang
+Plugin 'fatih/vim-go'
+Plugin 'rhysd/vim-go-impl'
 
 " C++ development
 Plugin 'a.vim'
@@ -63,7 +69,6 @@ Bundle 'Keithbsmiley/investigate.vim'
 " Language syntax
 " --------------------
 " General Languages
-Plugin 'fatih/vim-go'
 Plugin 'JuliaLang/julia-vim'
 Plugin 'derekwyatt/vim-scala.git'
 Plugin 'VimClojure'

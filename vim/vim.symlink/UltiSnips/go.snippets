@@ -1,0 +1,6 @@
+snippet errf "Error LogFatal" b
+if err != nil {
+	log.Fatalln("${1:message}:", err)
+}
+${0}
+endsnippet
