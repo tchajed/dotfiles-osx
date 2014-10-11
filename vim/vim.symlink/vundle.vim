@@ -66,7 +66,10 @@ Plugin 'gregsexton/gitv'
 
 " Documentation interfaces
 Plugin 'rizzatti/dash.vim'
-Bundle 'Keithbsmiley/investigate.vim'
+Plugin 'Keithbsmiley/investigate.vim'
+
+" Coq IDE
+Plugin 'the-lambda-church/coquille'
 
 " --------------------
 " Language syntax
