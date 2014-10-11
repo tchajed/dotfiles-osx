@@ -4,6 +4,11 @@ bind-key Space send-prefix
 bind-key C-Space next-window
 bind-key a last-window
 bind-key C-a last-window
+## Kinesis advantage prefix
+#set-option -g prefix C-a
+#bind-key a send-prefix
+#bind-key C-a last-window
+#bind-key Space next-window
 
 # Bind both releasing and holding control after prefix versions of these
 # commands
@@ -11,11 +16,11 @@ bind-key t next-window
 bind-key T previous-window
 bind-key C-t next-window
 bind-key C-T previous-window
-# Potential Kinesis Advantage keybindings
-# bind-key f next-window
-# bind-key C-f next-window
-# bind-key s previous-window
-# bind-key C-s previous-window
+## Potential Kinesis Advantage keybindings
+#bind-key f next-window
+#bind-key C-f next-window
+#bind-key s previous-window
+#bind-key C-s previous-window
 
 # Start numbering at 1
 set -g base-index 1
