@@ -19,19 +19,10 @@ bind up:shift;alt    nudge +0   -10%
 bind down:shift;alt  nudge +0   +10%
 
 # Throw Bindings
-bind 1:ctrl;alt         throw 0 resize
-bind 2:ctrl;alt         throw 1 resize
-bind 3:ctrl;alt         throw 2 resize
 bind right:ctrl;cmd throw right
 bind left:ctrl;cmd  throw left
-bind up:ctrl;cmd    throw up
-bind down:ctrl;cmd  throw down
-
-# Focus Bindings
-bind right:cmd    focus right
-bind left:cmd     focus left
-bind up:cmd       focus behind
-bind down:cmd     focus behind
+#bind up:ctrl;cmd    throw up
+#bind down:ctrl;cmd  throw down
 
 # Window Hints
 bind esc:cmd hint
