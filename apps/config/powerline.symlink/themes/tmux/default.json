@@ -4,25 +4,39 @@
 		"right": [
 			{
 				"function": "uptime",
-				"priority": 50
+				"priority": 50,
+				"args": {
+					"shorten_len": 1
+				}
 			},
 			{
-				"function": "system_load",
-				"priority": 50
+				"function": "battery"
 			},
 			{
-				"function": "date"
+				"function": "custom.system_load",
+				"priority": 50,
+				"args": {
+					"num_avgs": 1
+				}
 			},
 			{
 				"function": "date",
-				"name": "time",
+				"args": {
+					"format": "%m/%d"
+				}
+			},
+			{
+				"function": "date",
 				"args": {
 					"format": "%H:%M",
 					"istime": true
 				}
 			},
 			{
-				"function": "hostname"
+				"function": "hostname",
+				"args": {
+					"exclude_domain": true
+				}
 			}
 		]
 	}
