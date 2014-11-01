@@ -15,7 +15,7 @@ setopt COMPLETE_IN_WORD
 
 # don't expand aliases _before_ completion has finished
 #   like: git comm-[tab]
-setopt complete_aliases
+#setopt complete_aliases
 
 setopt extendedglob
 
