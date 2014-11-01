@@ -16,8 +16,7 @@ antigen bundle tmux
 antigen bundle golang
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-#antigen theme crunch
-antigen theme bureau
+antigen theme crunch
 
 antigen apply
 
