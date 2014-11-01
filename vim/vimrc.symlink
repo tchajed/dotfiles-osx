@@ -31,5 +31,11 @@ function! WriteMode()
   map 0 g0
 endfunction
 
+" Make sure quickfix window opens on bottom
+" Normally it opens in bottom of rightmost window, which puts it in the tagbar
+" if programming.
+" http://stackoverflow.com/questions/6726783/changing-default-position-of-quickfix-window-in-vim
+autocmd FileType qf wincmd J
+
 syntax on
 filetype indent plugin on
