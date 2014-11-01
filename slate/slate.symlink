@@ -25,4 +25,7 @@ bind left:ctrl;cmd  throw left
 #bind down:ctrl;cmd  throw down
 
 # Window Hints
-bind esc:cmd hint
+bind esc:cmd hint ASDFGHJKLQWERTYUIOPCVBN
+
+# Window sizing grid
+bind esc:cmd;shift grid
