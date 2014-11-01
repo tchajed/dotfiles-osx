@@ -70,7 +70,7 @@ Plugin 'rizzatti/dash.vim'
 Plugin 'Keithbsmiley/investigate.vim'
 
 " Coq IDE
-Plugin 'the-lambda-church/coquille'
+Plugin 'tchajed/coquille'
 
 " --------------------
 " Language syntax
