@@ -21,6 +21,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'The-NERD-tree'
+Plugin 'wesQ3/vim-windowswap'
 Plugin 'sjl/gundo.vim'
 Plugin 'matchit.zip'
 Plugin 'LargeFile'
