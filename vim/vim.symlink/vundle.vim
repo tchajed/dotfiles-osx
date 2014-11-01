@@ -91,7 +91,7 @@ Plugin 'nginx.vim'
 Plugin 'mattn/emmet-vim'
 
 " LaTeX
-Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
+Plugin 'gerw/vim-latex-suite'
 
 " Random languages
 Plugin 'salinasv/vim-vhdl'
