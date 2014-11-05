@@ -97,6 +97,7 @@ Plugin 'gerw/vim-latex-suite'
 Plugin 'salinasv/vim-vhdl'
 Plugin 'applescript.vim'
 Plugin 'gnuplot.vim'
+Plugin 'cespare/vim-toml'
 
 " ------------------
 " Vim enhancements
