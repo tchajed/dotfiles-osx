@@ -10,7 +10,10 @@
 				}
 			},
 			{
-				"function": "battery"
+				"function": "custom.battery",
+				"args": {
+					"max_percent": 95
+				}
 			},
 			{
 				"function": "custom.system_load",
