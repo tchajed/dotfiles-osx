@@ -87,6 +87,7 @@ Plugin 'JuliaLang/julia-vim'
 Plugin 'derekwyatt/vim-scala.git'
 Plugin 'VimClojure'
 Plugin 'wting/rust.vim'
+Plugin 'vim-scripts/Vim-R-plugin'
 
 " Web-related
 Plugin 'elzr/vim-json'
