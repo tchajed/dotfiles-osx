@@ -72,6 +72,13 @@ Plugin 'Keithbsmiley/investigate.vim'
 " Coq IDE
 Plugin 'tchajed/coquille'
 
+" Haskell
+Plugin 'lukerandall/haskellmode-vim'
+Plugin 'bitc/vim-hdevtools'
+Plugin 'eagletmt/neco-ghc'
+Plugin 'raichoo/haskell-vim'
+Plugin 'Twinside/vim-haskellConceal'
+
 " --------------------
 " Language syntax
 " --------------------
