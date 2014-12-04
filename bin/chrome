@@ -1,0 +1,4 @@
+#!/bin/bash
+# Launches (homebrew cask) Chrome in a way that works from within tmux properly
+
+reattach-to-user-namespace "/opt/homebrew-cask/Caskroom/google-chrome/latest/Google Chrome.app/Contents/MacOS/Google Chrome" $*
