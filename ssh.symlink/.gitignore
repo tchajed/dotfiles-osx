@@ -1,0 +1,4 @@
+# don't publish the private key, for obvious reasons
+/id_rsa
+# leaking hostnames from known_hosts is also not a great idea
+/known_hosts
