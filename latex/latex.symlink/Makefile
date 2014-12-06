@@ -2,7 +2,7 @@
 # with the name of the main tex file.
 -include Variables.make
 
-onlysources.tex := $(wildcard *.tex)
+onlysources.tex ?= $(wildcard *.tex)
 OUTPUTS=$(onlysources.tex:.tex=.pdf)
 default: $(OUTPUTS)
 
