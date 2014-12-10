@@ -13,6 +13,7 @@ au FileType go nmap <leader>b <Plug>(go-install)
 au FileType go nmap <leader>t <Plug>(go-test)
 
 " Open the definition for the identifer under the cursor
+au FileType go nmap <Leader>dd <Plug>(go-def)
 au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
 au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 
