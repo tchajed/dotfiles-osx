@@ -97,6 +97,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'nginx.vim'
 Plugin 'mattn/emmet-vim'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " LaTeX
 Plugin 'gerw/vim-latex-suite'
