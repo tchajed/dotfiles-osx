@@ -1,2 +1,2 @@
 map <Leader>l :NERDTreeTabsToggle<CR>
-map <Leader>t :NERDTreeFind<CR>
+map <Leader>f :NERDTreeFind<CR>
