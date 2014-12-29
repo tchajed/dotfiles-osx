@@ -28,4 +28,16 @@ bind left:ctrl;cmd  throw left
 bind esc:cmd hint ASDFGHJKLQWERTYUIOPCVBN
 
 # Window sizing grid
-bind esc:cmd;shift grid
+bind esc:cmd;shift grid 0:6,2 1:6,2 2:6,2
+
+## Layout
+# Monitors
+alias mon-left 0
+alias mon-right 1
+alias mon-laptop 2
+layout 3monitors 'Things':MAIN_FIRST throw ${mon-laptop}
+layout 3monitors 'iTerm':MAIN_FIRST throw ${mon-laptop}
+layout 3monitors 'Chrome':REPEAT throw ${mon-right}
+layout 3monitors 'MacVim':REPEAT throw ${mon-left}
+
+bind pad*:cmd layout 3monitors
