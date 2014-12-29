@@ -23,15 +23,17 @@
 				}
 			},
 			{
-				"function": "date",
+				"function": "weather",
+				"priority": 50,
 				"args": {
-					"format": "%m/%d"
+					"unit": "F",
+					"location_query": "champaign, il"
 				}
 			},
 			{
 				"function": "date",
 				"args": {
-					"format": "%H:%M",
+					"format": "%m/%d %H:%M",
 					"istime": true
 				}
 			},
