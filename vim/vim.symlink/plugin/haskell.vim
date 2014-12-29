@@ -1,5 +1,6 @@
 let g:haddock_browser = "open"
 let g:haddock_browser_callformat = "%s %s"
+let g:haddock_docdir = "/usr/local/share/doc/ghc/html/"
 
 au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
 au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
