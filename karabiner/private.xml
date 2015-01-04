@@ -72,5 +72,10 @@
                 </autogen>
             </item>
         </item>
+        <item>
+            <name>Fn+Esc to Caps Lock</name>
+            <identifier>private.fn_esc_to_caps</identifier>
+            <autogen>__KeyToKey__ KeyCode::ESCAPE, ModifierFlag::FN, KeyCode::CAPSLOCK</autogen>
+        </item>
     </item>
 </root>
