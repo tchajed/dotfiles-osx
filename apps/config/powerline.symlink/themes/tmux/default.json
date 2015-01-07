@@ -27,7 +27,7 @@
 				"priority": 50,
 				"args": {
 					"unit": "F",
-					"location_query": "cambridge, ma"
+					"location_query": "boston, ma"
 				}
 			},
 			{
