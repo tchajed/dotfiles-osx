@@ -1,3 +1,6 @@
+# Fix colors
+set-option -g default-terminal "screen-256color"
+
 set-option -g prefix C-Space
 # C-Space sends a literal ctrl-space
 bind-key Space send-prefix
