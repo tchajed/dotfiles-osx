@@ -23,14 +23,6 @@
 				}
 			},
 			{
-				"function": "weather",
-				"priority": 50,
-				"args": {
-					"unit": "F",
-					"location_query": "boston, ma"
-				}
-			},
-			{
 				"function": "date",
 				"args": {
 					"format": "%m/%d %H:%M",
