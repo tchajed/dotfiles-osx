@@ -109,6 +109,7 @@ Plugin 'salinasv/vim-vhdl'
 Plugin 'applescript.vim'
 Plugin 'gnuplot.vim'
 Plugin 'cespare/vim-toml'
+Plugin 'dag/vim-fish'
 
 " ------------------
 " Vim enhancements
