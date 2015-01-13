@@ -19,5 +19,43 @@ set PATH ~/go/bin /usr/local/opt/go/libexec/bin $PATH
 # Scripts
 set PATH ~/scripts $PATH
 
+alias realpath="grealpath"
+alias readlink="grealink"
+
+# Automatically set environment variables using .setenv-* files.
+# From github.com/jonhoo/configs
+set nooverride PATH PWD
+function -v PWD onchdir
+	set dr $PWD
+	while [ "$dr" != "/" ]
+		for e in $dr/.setenv-*
+			set envn (basename -- $e | sed 's/^\.setenv-//')
+			if contains $envn $nooverride
+				continue
+			end
+
+			if not test -s $e
+				# setenv is empty
+				# var value is file's dir
+				set envv (readlink -e $dr)
+			else if test -L $e; and test -d $e
+				# setenv is symlink to directory
+				# var value is target directory
+				set envv (readlink -e $e)
+			else
+				# setenv is non-empty file
+				# var value is file content
+				set envv (cat $e)
+			end
+
+			if not contains $envn $wasset
+				set wasset $wasset $envn
+				setenv $envn $envv
+			end
+		end
+		set dr (realpath -eL $dr/..)
+	end
+end
+
 # Load oh-my-fish configuration.
 source $fish_path/oh-my-fish.fish
