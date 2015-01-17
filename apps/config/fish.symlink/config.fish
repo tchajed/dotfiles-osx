@@ -57,5 +57,13 @@ function -v PWD onchdir
 	end
 end
 
+# Fix starting mvim from within tmux
+if test (which reattach-to-user-namespace)
+    set -l mvim_path (which mvim)
+    alias mvim "reattach-to-user-namespace $mvim_path"
+end
+# complete mvim correctly
+complete mvim --wraps vim
+
 # Load oh-my-fish configuration.
 source $fish_path/oh-my-fish.fish
