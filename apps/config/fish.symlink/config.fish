@@ -1,6 +1,9 @@
 # Path to your oh-my-fish.
 set fish_path $HOME/.oh-my-fish
 
+set -g theme_display_ruby "no"
+set -g default_user "$USER"
+
 # Theme
 set fish_theme bobthefish
 
