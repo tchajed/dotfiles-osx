@@ -4,3 +4,9 @@ if err != nil {
 }
 ${0}
 endsnippet
+
+snippet fore "For-each loop" b
+for _, ${1:name} := range ${2:collection} {
+	${0:${VISUAL}}
+}
+endsnippet
