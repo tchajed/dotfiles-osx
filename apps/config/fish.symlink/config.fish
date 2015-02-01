@@ -21,6 +21,8 @@ set PATH /usr/local/sbin $PATH
 set PATH ~/go/bin /usr/local/opt/go/libexec/bin $PATH
 # Scripts
 set PATH ~/scripts $PATH
+# Commited scripts in dotfiles
+set PATH ~/.dotfiles/bin $PATH
 
 alias realpath="grealpath"
 alias readlink="greadlink"
