@@ -1,0 +1,8 @@
+#!/bin/sh
+
+time="$1"
+title="$2"
+message="$3"
+
+gsleep $time
+osascript -e "display notification \"$message\" with title \"$title\""

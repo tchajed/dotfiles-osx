@@ -1,0 +1,15 @@
+#!/bin/sh
+
+POMO_IMAGE="$HOME/.dotfiles/pomo/pomo.png"
+START_ICON="$POMO_IMAGE"
+BREAK_ICON="$POMO_IMAGE"
+FINISH_ICON="$POMO_IMAGE"
+task="$@"
+
+terminal-notifier -contentImage "$START_ICON" -title "Start pomodoro" -message "$task"
+
+gsleep 5s
+terminal-notifier -contentImage "$BREAK_ICON" -title "Finished pomodoro, begin break" -message "$task"
+
+gsleep 5s
+terminal-notifier -contentImage "$FINISH_ICON" -title "Break over" -message ""
