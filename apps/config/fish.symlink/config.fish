@@ -23,7 +23,7 @@ set PATH ~/go/bin /usr/local/opt/go/libexec/bin $PATH
 set PATH ~/scripts $PATH
 
 alias realpath="grealpath"
-alias readlink="grealink"
+alias readlink="greadlink"
 
 # Automatically set environment variables using .setenv-* files.
 # From github.com/jonhoo/configs
