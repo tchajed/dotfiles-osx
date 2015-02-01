@@ -25,6 +25,7 @@ Plugin 'wesQ3/vim-windowswap'
 Plugin 'sjl/gundo.vim'
 Plugin 'matchit.zip'
 Plugin 'LargeFile'
+Plugin 'danro/rename.vim'
 
 " Search
 Plugin 'mileszs/ack.vim'
