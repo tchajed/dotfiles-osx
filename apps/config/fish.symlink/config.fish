@@ -24,6 +24,7 @@ set PATH ~/scripts $PATH
 # Commited scripts in dotfiles
 set PATH ~/.dotfiles/bin $PATH
 
+alias sleep="gsleep"
 alias realpath="grealpath"
 alias readlink="greadlink"
 
