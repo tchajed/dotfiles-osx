@@ -73,5 +73,7 @@ end
 # complete mvim correctly
 complete mvim --wraps vim
 
+eval (python -m virtualfish)
+
 # Load oh-my-fish configuration.
 source $fish_path/oh-my-fish.fish
