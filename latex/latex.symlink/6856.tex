@@ -1,0 +1,42 @@
+% vim: tw=80
+\documentclass[letterpaper,twoside,draft]{article}
+\usepackage{amsmath, amssymb}
+%\usepackage{algorithm}
+%\usepackage{algpseudocode}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{color}
+\usepackage{ifdraft}
+
+\newcommand{\union}{\cup}
+\newcommand{\intersect}{\cap}
+
+\newcommand{\collaborators}[1]{\noindent\textbf{Collaborators:} #1}
+\newcommand{\subprob}[1]{\noindent\textbf{#1} \nopagebreak}
+\newcommand{\prob}[1]{\ifdraft{\clearpage}{\cleardoublepage}\subprob{#1}}
+
+\ifdraft{%
+    \newcommand{\todo}[1]{{\color{red} TODO:\@ {#1}}}
+}{%
+    \newcommand{\todo}[1]{}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf{}%
+\rhead{Tej Chajed \\ \today}%
+\chead{\textbf{6.856 PS<+NUM+>\ifoptiondraft{: DRAFT}}}%
+\rfoot{p.~\thepage{}~of~\pageref{LastPage}}
+\renewcommand{\headrulewidth}{.4pt}
+
+\setlength{\headheight}{22.6pt}
+
+%\includeonly{prob1}
+
+\begin{document}
+
+\include{prob1}
+\include{prob2}
+\include{prob3}
+
+\end{document}
