@@ -1,0 +1,18 @@
+# These are made-up since my actual config is more sensitive, but demonstrate
+# common and useful use cases for .ssh/config. Note that ssh, scp and rsync all
+# make use of this config!
+
+Host gateway
+    User ubuntu
+    ForwardAgent yes
+    HostName long.domain.name.example.com
+    # if you use different key-pairs for different servers
+    IdentityFile ~/.ssh/gateway.key
+
+# Connect to server by using a proxy through gateway (the alias defined above);
+# note that the only parts of this that need to be changed are server (the
+# remote machine), ubuntu (the username on server) and gateway (the name of the
+# gateway machine to proxy through).
+Host server
+    User ubuntu
+    ProxyCommand ssh -q gateway nc %h %p
