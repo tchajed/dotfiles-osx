@@ -75,5 +75,7 @@ complete mvim --wraps vim
 
 eval (python -m virtualfish)
 
+source ~/.opam/opam-init/init.fish
+
 # Load oh-my-fish configuration.
 source $fish_path/oh-my-fish.fish
