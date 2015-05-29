@@ -26,6 +26,7 @@ Plugin 'sjl/gundo.vim'
 Plugin 'matchit.zip'
 Plugin 'LargeFile'
 Plugin 'danro/rename.vim'
+Plugin 'embear/vim-localvimrc'
 
 " Search
 Plugin 'mileszs/ack.vim'

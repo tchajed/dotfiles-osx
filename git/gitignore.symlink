@@ -1,3 +1,10 @@
+# OS X stores folder metadata information in DS_Store files, which become a
+# well-known pain in VCS and ZIP files.
 .DS_Store
-*~
+# vim swap files
 *.swp
+# backup files created by other programs
+*~
+# local vim rc - a generally unsafe mechanism; since its best not to load other
+# people's .lvimrc's, don't commit ours for others
+.lvimrc
