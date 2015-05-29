@@ -19,7 +19,7 @@ Plugin 'gmarik/Vundle.vim'
 " General
 " ==================
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'The-NERD-tree'
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'sjl/gundo.vim'
