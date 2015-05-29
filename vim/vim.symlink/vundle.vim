@@ -36,9 +36,7 @@ Plugin 'nerdtree-ack'
 " Programming
 " ==================
 
-Plugin 'kien/ctrlp.vim'
-" make ctrlp matching better and faster
-Plugin 'JazzCore/ctrlp-cmatcher'
+Plugin 'wincent/Command-T'
 Plugin 'scrooloose/syntastic'
 
 " --------------------
