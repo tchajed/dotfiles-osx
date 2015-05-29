@@ -31,6 +31,26 @@ function! WriteMode()
   map 0 g0
 endfunction
 
+command! -nargs=0 CurrentTask call CurrentTask()
+function! CurrentTask()
+    edit ~/dropbox/save/current-task.txt
+    " use large font
+    set guifont=Inconsolata\ for\ Powerline:h32
+    set columns=50
+    set lines=8
+    " disable the Powerline status bar
+    set laststatus=0
+    " and disable the text ruler
+    set noruler
+    " break lines at words
+    set linebreak
+    " disable both scrollbars
+    set guioptions-=r
+    set guioptions-=L
+    " display ~ for empty lines in same color as background
+    highlight NonText guifg=bg
+endfunction
+
 " Make sure quickfix window opens on bottom
 " Normally it opens in bottom of rightmost window, which puts it in the tagbar
 " if programming.
