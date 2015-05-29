@@ -75,6 +75,7 @@ Plugin 'Keithbsmiley/investigate.vim'
 
 " Coq IDE
 Plugin 'tchajed/coquille'
+Plugin 'def-lkb/vimbufsync'
 
 " Haskell
 Plugin 'lukerandall/haskellmode-vim'
