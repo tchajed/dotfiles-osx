@@ -24,3 +24,5 @@
         default = simple
 [github]
         user = tchajed
+[init]
+        templatedir = ~/.git_template
