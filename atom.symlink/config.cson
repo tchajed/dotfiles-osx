@@ -1,35 +1,25 @@
-'editor':
-  'showIndentGuide': true
-  'fontFamily': 'Menlo'
-  'fontSize': 15
-'core':
-  'excludeVcsIgnoredPaths': true
-  'ignoredNames': [
-    '.bundle'
-    '.git'
-    'log'
-    'repositories'
-    'tmp'
-    'vendor'
-  ]
-  'themes': [
-    'unity-ui'
-    'glacier-syntax'
-  ]
-  'hideGitIgnoredFiles': true
-  'disabledPackages': [
-    'background-tips'
-    'exception-reporting'
-    'metrics'
-  ]
-'spell-check':
-  'grammars': [
-    'text.plain'
-    'source.gfm'
-    'text.git-commit'
-  ]
-'welcome':
-  'showOnStartup': false
-'release-notes':
-  'viewedVersion': '0.89.0'
-'tree-view': {}
+"*":
+  "exception-reporting":
+    userId: "28a9e5b1-233d-1167-adf4-7ba1550921e1"
+  welcome:
+    showOnStartup: false
+  linter:
+    statusBar: "Show error if the cursor is in range"
+  core:
+    themes: [
+      "one-light-ui"
+      "solarized-light-syntax"
+    ]
+    projectHome: "~/code"
+  "one-dark-ui":
+    {}
+  editor:
+    invisibles:
+      {}
+    fontFamily: "Inconsolata for Powerline"
+  "isotope-ui":
+    {}
+  minimap:
+    {}
+  "vim-mode":
+    useClipboardAsDefaultRegister: true
