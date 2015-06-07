@@ -23,6 +23,8 @@ set PATH ~/go/bin /usr/local/opt/go/libexec/bin $PATH
 set PATH ~/scripts $PATH
 # Commited scripts in dotfiles
 set PATH ~/.dotfiles/bin $PATH
+# Uncommitted scripts and compiled binaries
+set PATH ~/bin $PATH
 # Haskell
 set PATH ~/.cabal/bin ~/Library/Haskell/bin $PATH
 
