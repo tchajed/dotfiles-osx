@@ -5,13 +5,6 @@
 # This installs some of the common dependencies needed (or at least desired)
 # using Homebrew.
 
-# Check for Homebrew
-if test ! $(which brew)
-then
-  echo "  Installing Homebrew for you."
-  ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" > /tmp/homebrew-install.log
-fi
-
 # Install homebrew packages
 if test ! $(which grc); then
 	brew install grc
@@ -21,6 +14,9 @@ if test ! $(which gls); then
 fi
 if test ! $(which spark); then
 	brew install coreutils
+fi
+if test ! $(which reattach-to-user-namespace); then
+    brew install reattach-to-user-namespace
 fi
 
 exit 0

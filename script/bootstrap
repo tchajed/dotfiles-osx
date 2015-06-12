@@ -154,7 +154,7 @@ setup_gitconfig
 install_dotfiles
 install_dotconfig
 
-# If we're on a Mac, let's install and setup homebrew.
+# If we're on a Mac, let's setup homebrew.
 if [ "$(uname -s)" == "Darwin" ]
 then
   info "installing dependencies"
