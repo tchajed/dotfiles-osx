@@ -27,6 +27,8 @@ set PATH ~/.dotfiles/bin $PATH
 set PATH ~/bin $PATH
 # Haskell
 set PATH ~/.cabal/bin ~/Library/Haskell/bin $PATH
+# Coq
+set PATH $COQBIN $PATH
 
 alias sleep="gsleep"
 alias realpath="grealpath"
