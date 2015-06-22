@@ -21,27 +21,6 @@
 					"num_avgs": 1
 				}
 			},
-            {
-                "function": "wthr.weather",
-                "args": {
-                    "unit": "F",
-                    "location_query": "cambridge, ma",
-                    "icons": {
-                        "day":           "〇",
-                        "blustery":      "⚑",
-                        "rainy":         "☔",
-                        "cloudy":        "☁",
-                        "snowy":         "❅",
-                        "stormy":        "☈",
-                        "foggy":         "≡",
-                        "sunny":         "☼",
-                        "night":         "☾",
-                        "windy":         "☴",
-                        "not_available": "�",
-                        "unknown":       "⚠"
-                    }
-                }
-            },
 			{
 				"function": "powerline.segments.common.time.date",
 				"args": {
