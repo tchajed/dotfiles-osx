@@ -15,8 +15,6 @@ set fish_theme bobthefish
 # Path to your custom folder (default path is $FISH/custom)
 #set fish_custom $HOME/dotfiles/oh-my-fish
 
-set PATH /usr/local/bin $PATH
-
 if status --is-login
     # Homebrew sbin
     set PATH /usr/local/sbin $PATH
