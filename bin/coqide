@@ -1,0 +1,5 @@
+#!/bin/sh
+
+/Applications/CoqIDE_8.5beta2.app/Contents/MacOS/coqide $*
+
+exit $?
