@@ -1,6 +1,5 @@
 ; coqide GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
-; on OS X with app, goes in ~/Library/Application Support/coq/coqides.keys
 ;
 ; (gtk_accel_path "<Actions>/Templates/Template Read Module" "")
 ; (gtk_accel_path "<Actions>/Tactics/Tactic pattern" "")
