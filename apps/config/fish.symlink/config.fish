@@ -15,20 +15,24 @@ set fish_theme bobthefish
 # Path to your custom folder (default path is $FISH/custom)
 #set fish_custom $HOME/dotfiles/oh-my-fish
 
-# Homebrew sbin
-set PATH /usr/local/sbin $PATH
-# Go binaries
-set PATH ~/go/bin /usr/local/opt/go/libexec/bin $PATH
-# Scripts
-set PATH ~/scripts $PATH
-# Commited scripts in dotfiles
-set PATH ~/.dotfiles/bin $PATH
-# Uncommitted scripts and compiled binaries
-set PATH ~/bin $PATH
-# Haskell
-set PATH ~/.cabal/bin ~/Library/Haskell/bin $PATH
-# Coq
-set PATH $COQBIN $PATH
+set PATH /usr/local/bin $PATH
+
+if status --is-login
+    # Homebrew sbin
+    set PATH /usr/local/sbin $PATH
+    # Go binaries
+    set PATH ~/go/bin /usr/local/opt/go/libexec/bin $PATH
+    # Scripts
+    set PATH ~/scripts $PATH
+    # Commited scripts in dotfiles
+    set PATH ~/.dotfiles/bin $PATH
+    # Uncommitted scripts and compiled binaries
+    set PATH ~/bin $PATH
+    # Haskell
+    set PATH ~/.cabal/bin ~/Library/Haskell/bin $PATH
+    # Coq
+    set PATH $PATH $COQBIN
+end
 
 alias sleep="gsleep"
 alias realpath="grealpath"
