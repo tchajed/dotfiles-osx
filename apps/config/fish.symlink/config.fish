@@ -27,7 +27,12 @@ Plugin 'brew'
     # Uncommitted scripts and compiled binaries
     set PATH ~/bin $PATH
     # Haskell
-    set PATH ~/.cabal/bin ~/Library/Haskell/bin $PATH
+    # Add GHC 7.10.1 to the PATH, via https://ghcformacosx.github.io/
+    set -x GHC_DOT_APP "/opt/homebrew-cask/Caskroom/ghc/7.10.1-r0/ghc-7.10.1.app"
+    if test -d "$GHC_DOT_APP"
+        set PATH ~/.cabal/bin "$GHC_DOT_APP/Contents/bin" $PATH
+    end
+    # set PATH ~/.cabal/bin ~/Library/Haskell/bin $PATH
     # Coq
     set PATH $PATH $COQBIN
 #end
