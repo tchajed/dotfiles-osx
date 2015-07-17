@@ -11,15 +11,13 @@
       "solarized-light-syntax"
     ]
     projectHome: "~/code"
-  "one-dark-ui":
-    {}
+    audioBeep: false
+  "one-dark-ui": {}
   editor:
-    invisibles:
-      {}
+    invisibles: {}
     fontFamily: "Inconsolata for Powerline"
-  "isotope-ui":
-    {}
-  minimap:
-    {}
+  "isotope-ui": {}
+  minimap: {}
   "vim-mode":
     useClipboardAsDefaultRegister: true
+  "go-plus": {}
