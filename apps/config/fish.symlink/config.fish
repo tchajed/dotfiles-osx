@@ -87,3 +87,5 @@ complete mvim --wraps vim
 eval (python -m virtualfish)
 
 source ~/.opam/opam-init/init.fish
+# setting MANPATH breaks manpage lookups, which normally use $PATH
+set -e MANPATH
