@@ -15,7 +15,7 @@ Plugin 'brew'
 
 [ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
 
-if status --is-login
+#if status --is-login
     # Homebrew sbin
     set PATH /usr/local/sbin $PATH
     # Go binaries
@@ -30,7 +30,7 @@ if status --is-login
     set PATH ~/.cabal/bin ~/Library/Haskell/bin $PATH
     # Coq
     set PATH $PATH $COQBIN
-end
+#end
 
 alias sleep="gsleep"
 alias realpath="grealpath"

@@ -33,7 +33,7 @@ source "$HOME/.vim/bundle/powerline/powerline/bindings/tmux/powerline.conf"
 
 # Use fish shell
 set-option -g default-shell "/usr/local/bin/fish"
-set-option -g default-command "reattach-to-user-namespace fish"
+#set-option -g default-command "reattach-to-user-namespace fish"
 
 # Reload config - might eventually remove this once config becomes stable.
 bind-key R source-file ~/.tmux.conf \; display-message "tmux.conf reloaded."
