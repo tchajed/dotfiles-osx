@@ -82,6 +82,10 @@ Plugin 'eagletmt/neco-ghc'
 Plugin 'raichoo/haskell-vim'
 Plugin 'Twinside/vim-haskellConceal'
 
+" Idris
+Plugin 'idris-hackers/idris-vim'
+Plugin 'Shougo/vimshell.vim'
+
 " --------------------
 " Language syntax
 " --------------------
