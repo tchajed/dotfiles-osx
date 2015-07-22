@@ -72,7 +72,7 @@ Plugin 'rizzatti/dash.vim'
 Plugin 'Keithbsmiley/investigate.vim'
 
 " Coq IDE
-Plugin 'tchajed/coquille'
+Plugin 'the-lambda-church/coquille'
 Plugin 'def-lkb/vimbufsync'
 
 " Haskell
