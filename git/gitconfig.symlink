@@ -4,7 +4,7 @@
 [credential]
         helper = osxkeychain
 [alias]
-        wtf     = !~/.dotfiles/bin/git-wtf
+        wat     = !~/.dotfiles/bin/git-wat
         rank-contributors = !~/.dotfiles/bin/git-rank-contributors
         count   = !git shortlog -sn
         latexdiff = git-latexdiff
