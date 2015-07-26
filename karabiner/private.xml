@@ -77,5 +77,14 @@
             <identifier>private.fn_esc_to_caps</identifier>
             <autogen>__KeyToKey__ KeyCode::ESCAPE, ModifierFlag::FN, KeyCode::CAPSLOCK</autogen>
         </item>
+        <item>
+            <name>MouseButton4 and MouseButton5 to move left/right a space</name>
+            <appendix>maps button5 to alt-cmd-left and button4 to alt-cmd-right</appendix>
+            <identifier>private.button45_spaces</identifier>
+            <autogen>__KeyToKey__ PointingButton::BUTTON5,
+                    KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L </autogen>
+            <autogen>__KeyToKey__ PointingButton::BUTTON4,
+                    KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L </autogen>
+        </item>
     </item>
 </root>
