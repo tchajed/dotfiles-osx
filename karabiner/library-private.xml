@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<!-- This file should go in ~/Library/Application Support/Karabiner.
+<!-- This file should go in "~/Library/Application
+     Support/Karabiner/private.xml".
      Customizations belong in the included karabiner/private.xml file. -->
 <root>
     <include path="{{ ENV_HOME }}/.dotfiles/karabiner/private.xml" />
