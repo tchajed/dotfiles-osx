@@ -26,3 +26,14 @@
         user = tchajed
 [init]
         templatedir = ~/.git_template
+[diff]
+        # See http://bramcohen.livejournal.com/73318.html.
+        # In short, it fixes the following diff, which added
+        # func2:
+        #  void func() {
+        # +}
+        # +
+        # +void func2() {
+        #  }
+        #  // rest of file
+        algorithm = patience
