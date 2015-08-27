@@ -86,6 +86,9 @@ end
 # complete mvim correctly
 complete mvim --wraps vim
 
+alias aquamacs="open -a /opt/homebrew-cask/Caskroom/aquamacs/3.2/Aquamacs.app"
+complete aquamacs --wraps emacs
+
 eval (python -m virtualfish)
 
 source ~/.opam/opam-init/init.fish
