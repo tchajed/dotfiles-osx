@@ -17,7 +17,14 @@
     invisibles: {}
     fontFamily: "Inconsolata for Powerline"
   "isotope-ui": {}
-  minimap: {}
+  minimap:
+    plugins:
+      "git-diff": true
+      linter: true
   "vim-mode":
     useClipboardAsDefaultRegister: true
   "go-plus": {}
+  "git-diff": {}
+  "markdown-preview": {}
+  "atom-beautify":
+    _analyticsUserId: "1eed1c94-1ea6-4c4c-9088-a722452cdaa2"
