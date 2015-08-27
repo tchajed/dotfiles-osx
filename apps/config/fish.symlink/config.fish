@@ -13,6 +13,8 @@ Theme 'bobthefish'
 Plugin 'theme'
 Plugin 'brew'
 
+set -g theme_display_ruby no
+
 [ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
 
 #if status --is-login
