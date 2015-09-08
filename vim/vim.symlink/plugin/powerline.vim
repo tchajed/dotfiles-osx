@@ -5,7 +5,7 @@ set fillchars+=stl:\ ,stlnc:\
 set laststatus=2
 
 if has('gui_running')
-	set guifont=Inconsolata\ for\ Powerline:h13
+	set guifont=Hack:h12
 else
 	set term=xterm-256color
 endif
