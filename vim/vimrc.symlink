@@ -60,5 +60,7 @@ endfunction
 " http://stackoverflow.com/questions/6726783/changing-default-position-of-quickfix-window-in-vim
 autocmd FileType qf wincmd J
 
+let g:localvimrc_whitelist='/Users/tchajed/code/mit-pdos/.*'
+
 syntax on
 filetype indent plugin on
