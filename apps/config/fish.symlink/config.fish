@@ -29,8 +29,8 @@ set -g theme_display_ruby no
     # Uncommitted scripts and compiled binaries
     set PATH ~/bin $PATH
     # Haskell
-    # Add GHC 7.10.1 to the PATH, via https://ghcformacosx.github.io/
-    set -x GHC_DOT_APP "/opt/homebrew-cask/Caskroom/ghc/7.10.1-r0/ghc-7.10.1.app"
+    # Add GHC 7.10.2 to the PATH, via https://ghcformacosx.github.io/
+    set -x GHC_DOT_APP "/opt/homebrew-cask/Caskroom/ghc/7.10.2-r0/ghc-7.10.2.app"
     if test -d "$GHC_DOT_APP"
         set PATH ~/Library/Haskell/bin "$GHC_DOT_APP/Contents/bin" $PATH
     end
