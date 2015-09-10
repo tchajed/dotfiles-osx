@@ -1,4 +1,4 @@
 # vim: ft=make
 %.tex: %.lhs
-	lhs2TeX $< -o $@
+	hscolour -lit -latex -partial $< -o$@
 
