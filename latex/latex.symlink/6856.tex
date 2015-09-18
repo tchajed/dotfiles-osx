@@ -7,13 +7,23 @@
 \usepackage{lastpage}
 \usepackage{color}
 \usepackage{ifdraft}
+% use symbols since the numbers can look like exponents
+\usepackage[symbol]{footmisc}
 
 \newcommand{\union}{\cup}
 \newcommand{\intersect}{\cap}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\vspan}{span}
+\newcommand{\pollmu}{\mu_{\epsilon\delta}}
 
 \newcommand{\collaborators}[1]{\noindent\textbf{Collaborators:} #1}
 \newcommand{\subprob}[1]{\noindent\textbf{#1} \nopagebreak}
-\newcommand{\prob}[1]{\ifdraft{\clearpage}{\cleardoublepage}\subprob{#1}}
+\newcommand{\prob}[1]{%
+\ifdraft{\clearpage}{\cleardoublepage}%
+\renewcommand{\problem}{#1}%
+\subprob{#1.}}
+\newcommand{\problem}{}
 
 \ifdraft{%
     \newcommand{\todo}[1]{{\color{red} TODO:\@ {#1}}}
