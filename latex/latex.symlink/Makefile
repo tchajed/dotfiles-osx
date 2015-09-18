@@ -8,7 +8,7 @@ default: $(OUTPUTS)
 
 .PHONY: FORCE
 $(OUTPUTS): %.pdf: %.tex FORCE
-	latexrun $< -o $@
+	latexrun --latex-args=-synctex=1 $< -o $@
 
 preview:
 	open $(OUTPUTS)
