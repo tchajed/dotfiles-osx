@@ -2,14 +2,17 @@
 
 %include lhs2TeX.fmt
 
-\long\def\conceal#1{}
-
 \usepackage{amsmath, amssymb}
 \usepackage{url}
 \usepackage{tabularx}
 \usepackage{inconsolata}
 \usepackage[T1]{fontenc}
 \usepackage[pdftex]{graphicx, color}
+
+\usepackage{comment}
+% makes \begin{conceal}...\end{conceal} a comment;
+% intended for hiding code that should be compiled
+\excludecomment{conceal}
 
 \newcommand{\prob}[1]{\noindent\textbf{#1} \nopagebreak}
 
@@ -38,7 +41,7 @@
 \line
 \leftright{\today}{Tej Chajed}
 
-\conceal{
+\begin{conceal}
 \begin{code}
 {-# OPTIONS_GHC -fno-warn-unused-binds #-}
 -- {-# OPTIONS_GHC -fno-warn-missing-signatures #-}
@@ -48,6 +51,6 @@ main :: IO ()
 main = return ()
 
 \end{code}
-}
+\end{conceal}
 
 \end{document}
