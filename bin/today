@@ -9,6 +9,7 @@ on run argv
 	set todo to argv as text
 	tell application "Things"
 		set newToDo to make new to do ¬
-			with properties { name: todo }
+			with properties { name: todo } ¬
+            at beginning of list "Today"
     end tell
 end run
