@@ -52,6 +52,16 @@ function! CurrentTask()
     set guioptions-=L
     " display ~ for empty lines in same color as background
     highlight NonText guifg=bg
+    normal! G
+    silent !osascript /Users/tchajed/.dotfiles/bin/position-current-task.scpt
+    " TODO: redraw with ctrl-l
+
+    " mark current task done
+    nmap <Leader>d I✓ <Esc>
+    " re-align to current date
+    nmap <Leader>c G?\v\d{4}-\d{2}-\d{2}<CR>zti<Esc>
+    " insert today's date
+    nmap <Leader>t :read !date "+\%Y-\%m-\%d"<CR>i<Esc>
 endfunction
 
 " Make sure quickfix window opens on bottom
