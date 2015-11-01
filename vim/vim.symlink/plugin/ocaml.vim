@@ -1,7 +1,8 @@
 let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 
 " ocp-indent, code reformatting
-autocmd FileType ocaml execute 'source' g:opamshare . "/vim/syntax/ocp-indent.vim"
+" execute "set rtp+=" . g:opamshare . "/ocp-indent/vim"
+set rtp^="/Users/tchajed/.opam/4.02.3/share/ocp-indent/vim"
 
 " merlin, auto-completion
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
