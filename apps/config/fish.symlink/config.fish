@@ -42,6 +42,7 @@ alias sleep="gsleep"
 alias realpath="grealpath"
 alias readlink="greadlink"
 alias sed="gsed"
+alias tar="gtar"
 
 # Automatically set environment variables using .setenv-* files.
 # From github.com/jonhoo/configs

@@ -18,5 +18,8 @@ fi
 if test ! $(which reattach-to-user-namespace); then
     brew install reattach-to-user-namespace
 fi
+if test ! $(which gtar); then
+    brew install gnu-tar
+fi
 
 exit 0
