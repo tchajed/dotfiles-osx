@@ -1,6 +1,6 @@
 #!/bin/sh
 
-/Applications/CoqIDE_8.5beta3.app/Contents/MacOS/coqide \
+/Applications/CoqIDE_8.5beta2.app/Contents/MacOS/coqide \
     -async-proofs-j ${COQIDE_JOBS:-1} \
     -async-proofs-tac-j ${COQIDE_JOBS:-1} "$@"
 
