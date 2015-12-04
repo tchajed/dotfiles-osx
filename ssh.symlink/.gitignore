@@ -1,5 +1,6 @@
-# don't publish the private key, for obvious reasons
+# don't publish private keys, for obvious reasons
 /id_rsa
+/id_rsa.cauchy
 # leaking hostnames from known_hosts is also not a great idea
 /known_hosts
 # ssh config also has hostnames (for shorter aliases) and usernames
