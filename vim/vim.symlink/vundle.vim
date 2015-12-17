@@ -86,6 +86,9 @@ Plugin 'Twinside/vim-haskellConceal'
 Plugin 'idris-hackers/idris-vim'
 Plugin 'Shougo/vimshell.vim'
 
+" Spin Promela
+Plugin 'promela.vim'
+
 " --------------------
 " Language syntax
 " --------------------
