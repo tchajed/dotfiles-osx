@@ -95,3 +95,9 @@ eval (python -m virtualfish)
 source ~/.opam/opam-init/init.fish
 # setting MANPATH breaks manpage lookups, which normally use $PATH
 set -e MANPATH
+
+# changing java version
+function jhome
+    set -Ux JAVA_HOME (/usr/libexec/java_home $argv)
+    java -version
+end
