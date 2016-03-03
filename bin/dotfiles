@@ -1,8 +1,8 @@
 #!/bin/sh
 #
-# dot
+# dotfiles
 #
-# `dot` handles installation of dependencies.
+# `dotfiles` handles installation of dependencies.
 export ZSH=$HOME/.dotfiles
 
 # Set OS X defaults
