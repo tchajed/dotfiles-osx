@@ -331,7 +331,7 @@
 ; (gtk_accel_path "<Actions>/Tactics/Tactic double induction" "")
 ; (gtk_accel_path "<Actions>/Templates/Template L" "")
 ; (gtk_accel_path "<Actions>/Templates/Template Derive Inversion--clear" "")
-; (gtk_accel_path "<Actions>/View/Display universe levels" "<Shift><Alt>u")
+(gtk_accel_path "<Actions>/View/Display universe levels" "<Primary><Shift>u")
 ; (gtk_accel_path "<Actions>/Templates/Template G" "")
 ; (gtk_accel_path "<Actions>/Templates/Template F" "")
 ; (gtk_accel_path "<Actions>/Tactics/Tactic dependent inversion--clear -- with" "")
