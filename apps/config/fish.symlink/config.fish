@@ -28,6 +28,8 @@ set -g theme_display_ruby no
     set PATH ~/.dotfiles/bin $PATH
     # Uncommitted scripts and compiled binaries
     set PATH ~/bin $PATH
+    # npm
+    set PATH ~/.npm-packages/bin $PATH
     # Haskell
     # Add GHC 7.10.2 to the PATH, via https://ghcformacosx.github.io/
     set -x GHC_DOT_APP "/opt/homebrew-cask/Caskroom/ghc/7.10.2-r0/ghc-7.10.2.app"
