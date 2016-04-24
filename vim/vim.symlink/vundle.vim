@@ -89,6 +89,9 @@ Plugin 'Shougo/vimshell.vim'
 " Spin Promela
 Plugin 'promela.vim'
 
+" Dafny
+Plugin 'mlr-msft/vim-loves-dafny'
+
 " --------------------
 " Language syntax
 " --------------------
@@ -115,6 +118,9 @@ Plugin 'sql.vim'
 
 " LaTeX
 Plugin 'gerw/vim-latex-suite'
+
+" F*
+Plugin 'FStarLang/VimFStar'
 
 " Random languages
 Plugin 'salinasv/vim-vhdl'
