@@ -1,30 +1,50 @@
 "*":
-  "exception-reporting":
-    userId: "28a9e5b1-233d-1167-adf4-7ba1550921e1"
-  welcome:
-    showOnStartup: false
-  linter:
-    statusBar: "Show error if the cursor is in range"
+  "atom-beautify":
+    general:
+      _analyticsUserId: "1eed1c94-1ea6-4c4c-9088-a722452cdaa2"
+    js: {}
+    typescript:
+      beautify_on_save: true
+  "atom-easy-jsdoc": {}
+  "autocomplete-plus":
+    fileBlacklist: [
+      ".*"
+      "*.md"
+    ]
   core:
+    audioBeep: false
+    projectHome: "~/code"
     themes: [
       "one-light-ui"
       "solarized-light-syntax"
     ]
-    projectHome: "~/code"
-    audioBeep: false
-  "one-dark-ui": {}
   editor:
-    invisibles: {}
     fontFamily: "Inconsolata for Powerline"
+    invisibles: {}
+    softWrapAtPreferredLineLength: true
+  "exception-reporting":
+    userId: "28a9e5b1-233d-1167-adf4-7ba1550921e1"
+  "file-icons": {}
+  "git-diff": {}
+  "go-plus": {}
+  gofmt: {}
   "isotope-ui": {}
+  linter:
+    statusBar: "Show error if the cursor is in range"
+  "markdown-preview": {}
   minimap:
     plugins:
       "git-diff": true
+      "git-diffDecorationsZIndex": 0
       linter: true
+      linterDecorationsZIndex: 0
+  "one-dark-ui": {}
+  react: {}
+  "terminal-plus":
+    core:
+      shell: "/usr/local/bin/fish"
+    style: {}
   "vim-mode":
     useClipboardAsDefaultRegister: true
-  "go-plus": {}
-  "git-diff": {}
-  "markdown-preview": {}
-  "atom-beautify":
-    _analyticsUserId: "1eed1c94-1ea6-4c4c-9088-a722452cdaa2"
+  welcome:
+    showOnStartup: false
