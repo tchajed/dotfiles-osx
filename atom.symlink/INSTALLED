@@ -1,0 +1,17 @@
+manually maintained list of installed packages
+
+maybe should install pigments (display colors in files, eg CSS)
+
+go-plus
+atom-beautify
+file-icons
+vim-mode
+ex-mode
+git-plus
+minimap
+minimap-git-diff
+react
+markdown-scroll-sync
+atom-handlebars
+
+jshint
