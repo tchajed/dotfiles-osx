@@ -21,5 +21,8 @@ fi
 if test ! $(which gtar); then
     brew install gnu-tar
 fi
+if test ! $(which diff-so-fancy); then
+    brew install diff-so-fancy
+fi
 
 exit 0
