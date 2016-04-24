@@ -32,10 +32,12 @@ set -g theme_display_ruby no
     set PATH ~/.npm-packages/bin $PATH
     # Haskell
     # Add GHC 7.10.2 to the PATH, via https://ghcformacosx.github.io/
-    set -x GHC_DOT_APP "/opt/homebrew-cask/Caskroom/ghc/7.10.2-r0/ghc-7.10.2.app"
+    # set -x GHC_DOT_APP "/opt/homebrew-cask/Caskroom/ghc/7.10.2-r0/ghc-7.10.2.app"
     if test -d "$GHC_DOT_APP"
         set PATH ~/Library/Haskell/bin "$GHC_DOT_APP/Contents/bin" $PATH
     end
+    # Haskell stack recommended setup
+    set PATH ~/.stack/programs/x86_64-osx/ghc-7.10.3/bin $PATH
     # Coq
     set PATH $PATH $COQBIN
 #end
