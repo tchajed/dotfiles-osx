@@ -1,0 +1,22 @@
+# shebang
+snippet shebang "shebang line" b
+#!/usr/bin/env python
+${1}
+endsnippet
+
+# script main code
+snippet main "main" b
+if __name__ == '__main__':
+    ${1}
+endsnippet
+
+snippet argparse "create argparse parser" b
+import argparse
+
+parser = argparse.ArgumentParser(
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+${1}
+
+args = parser.parse_args()
+${2}
+endsnippet
