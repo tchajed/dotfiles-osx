@@ -31,7 +31,7 @@ def commit_msgs(start_ref, end_ref):
         line = line.strip()
         if line == "":
             continue
-        sha, summary = line.split("|")
+        sha, summary = line.split("|", 1)
         yield (sha, summary)
 
 def temp_msg(msg):
