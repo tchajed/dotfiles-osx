@@ -3,3 +3,6 @@
 " opens in current tab on enter and Cmd-Shift-T opens in new tab on enter).
 let g:CommandTAcceptSelectionMap = '<C-t>'
 let g:CommandTAcceptSelectionTabMap = '<CR>'
+let g:CommandTWildIgnore="**/node_modules/*"
+
+" by default, C-f refreshes files when CommandT is open

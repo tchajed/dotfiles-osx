@@ -5,6 +5,8 @@
 *.swp
 # backup files created by other programs
 *~
-# local vim rc - a generally unsafe mechanism; since its best not to load other
+# local vim rc - a generally unsafe mechanism; since it's best not to load other
 # people's .lvimrc's, don't commit ours for others
 .lvimrc
+# emacs backup files
+.#*

@@ -1,11 +1,16 @@
 "*":
   "atom-beautify":
+    css:
+      beautify_on_save: true
     general:
       _analyticsUserId: "1eed1c94-1ea6-4c4c-9088-a722452cdaa2"
     js: {}
     typescript:
       beautify_on_save: true
   "atom-easy-jsdoc": {}
+  "atom-material-ui":
+    fonts: {}
+    treeView: {}
   "autocomplete-plus":
     fileBlacklist: [
       ".*"
@@ -13,18 +18,29 @@
     ]
   core:
     audioBeep: false
+    disabledPackages: [
+      "minimap-git-diff"
+    ]
     projectHome: "~/code"
     themes: [
       "one-light-ui"
       "solarized-light-syntax"
     ]
   editor:
-    fontFamily: "Inconsolata for Powerline"
+    backUpBeforeSaving: true
+    fontFamily: "Hack"
+    fontSize: 12
     invisibles: {}
+    scrollPastEnd: true
     softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "28a9e5b1-233d-1167-adf4-7ba1550921e1"
   "file-icons": {}
+  "fuzzy-finder":
+    ignoredNames: [
+      "node_modules"
+      "tmp"
+    ]
   "git-diff": {}
   "go-plus": {}
   gofmt: {}

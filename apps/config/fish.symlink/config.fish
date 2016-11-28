@@ -1,31 +1,12 @@
-# Path to your oh-my-fish.
-set fish_path $HOME/.oh-my-fish
-
-# Path to your custom folder (default path is ~/.oh-my-fish/custom)
-#set fish_custom $HOME/dotfiles/oh-my-fish
-
-# Load oh-my-fish configuration.
-. $fish_path/oh-my-fish.fish
-
-# Custom plugins and themes may be added to ~/.oh-my-fish/custom
-# Plugins and themes can be found at https://github.com/oh-my-fish/
-Theme 'bobthefish'
-Plugin 'theme'
-Plugin 'brew'
-
+set -g theme_display_git_ahead_verbose yes
 set -g theme_display_ruby no
-
-[ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
+set -g theme_color_scheme dark
 
 #if status --is-login
     # Homebrew sbin
     set PATH /usr/local/sbin $PATH
     # Go binaries
     set PATH ~/go/bin /usr/local/opt/go/libexec/bin $PATH
-    # Scripts
-    set PATH ~/scripts $PATH
-    # Commited scripts in dotfiles
-    set PATH ~/.dotfiles/bin $PATH
     # Uncommitted scripts and compiled binaries
     set PATH ~/bin $PATH
     # npm
@@ -37,16 +18,25 @@ set -g theme_display_ruby no
         set PATH ~/Library/Haskell/bin "$GHC_DOT_APP/Contents/bin" $PATH
     end
     # Haskell stack recommended setup
-    set PATH ~/.stack/programs/x86_64-osx/ghc-7.10.3/bin $PATH
+    set PATH ~/.stack/programs/x86_64-osx/ghc-8.0.1/bin $PATH
+    # stack also installs here?
+    set PATH ~/.local/bin $PATH
     # Coq
-    set PATH $PATH $COQBIN
+    set PATH $COQBIN $PATH
+    # Rust
+    set PATH ~/.cargo/bin $PATH
+
+    # Commited scripts in dotfiles
+    set PATH ~/.dotfiles/bin $PATH
 #end
 
 alias sleep="gsleep"
 alias realpath="grealpath"
 alias readlink="greadlink"
-alias sed="gsed"
 alias tar="gtar"
+alias e="emacsclient --no-wait --create-frame"
+alias et="emacsclient --tty --create-frame"
+alias es="emacsclient --no-wait --create-frame --eval '(progn (switch-to-buffer \"*scratch*\") (delete-other-windows))'"
 
 # Automatically set environment variables using .setenv-* files.
 # From github.com/jonhoo/configs
@@ -89,10 +79,10 @@ if test (which reattach-to-user-namespace)
     alias mvim "reattach-to-user-namespace $mvim_path"
 end
 # complete mvim correctly
-complete mvim --wraps vim
+complete --command mvim --wraps vim
 
 alias aquamacs="open -a /opt/homebrew-cask/Caskroom/aquamacs/3.2/Aquamacs.app"
-complete aquamacs --wraps emacs
+complete --command aquamacs --wraps emacs
 
 eval (python -m virtualfish)
 
@@ -105,6 +95,10 @@ function jhome
     set -Ux JAVA_HOME (/usr/libexec/java_home $argv)
     java -version
 end
+
+# enter GPG password from command line
+set -x PINENTRY_USER_DATA "USE_CURSES=1"
+set -x GPG_TTY (tty)
 
 # iTerm 2 shell integration
 # https://iterm2.com/shell_integration.html

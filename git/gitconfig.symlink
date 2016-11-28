@@ -1,6 +1,6 @@
 [user]
         name = Tej Chajed
-        email = tchajed@gmail.com
+        email = tchajed@mit.edu
 [credential]
         helper = osxkeychain
 [alias]
@@ -16,6 +16,8 @@
 [core]
         excludesfile = ~/.gitignore
         editor = vim
+        pager = diff-so-fancy | less --tabs=4 -RFX
+	hooksPath = /Users/tchajed/.git_template/hooks/
 [mergetool]
         keepBackup = false
 [difftool]
@@ -24,19 +26,9 @@
         default = simple
 [github]
         user = tchajed
-[init]
-        templatedir = ~/.git_template
+#[init]
+#        templatedir = ~/.git_template
 [diff]
-        # See http://bramcohen.livejournal.com/73318.html.
-        # In short, it fixes the following diff, which added
-        # func2:
-        #  void func() {
-        # +}
-        # +
-        # +void func2() {
-        #  }
-        #  // rest of file
-        algorithm = patience
-[pager]
-	diff = diff-so-fancy | less --tabs=1,5 -RFX
-	show = diff-so-fancy | less --tabs=1,5 -RFX
+    compactionHeuristic = on
+[commit]
+	gpgsign = true

@@ -15,3 +15,14 @@ markdown-scroll-sync
 atom-handlebars
 
 jshint
+stylus
+linter-stylint
+pigments
+zen
+emmet
+
+ide-haskell
+language-haskell
+haskell-ghc-mod
+autocomplete-haskell
+ide-haskell-cabal

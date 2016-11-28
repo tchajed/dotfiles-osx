@@ -86,5 +86,10 @@
             <autogen>__KeyToKey__ PointingButton::BUTTON4,
                     KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L </autogen>
         </item>
+        <item>
+          <name>Cmd-Play to F13 for remapping</name>
+          <identifier>private.media_play_f13</identifier>
+          <autogen>__KeyToKey__ ConsumerKeyCode::MUSIC_PLAY, ModifierFlag::COMMAND_L, KeyCode::F13</autogen>
+        </item>
     </item>
 </root>

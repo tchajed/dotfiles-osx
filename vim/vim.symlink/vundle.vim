@@ -27,6 +27,7 @@ Plugin 'matchit.zip'
 Plugin 'LargeFile'
 Plugin 'danro/rename.vim'
 Plugin 'embear/vim-localvimrc'
+Plugin 'vim-scripts/Align'
 
 " Search
 Plugin 'mileszs/ack.vim'
@@ -76,11 +77,15 @@ Plugin 'tchajed/coquille'
 Plugin 'def-lkb/vimbufsync'
 
 " Haskell
-Plugin 'lukerandall/haskellmode-vim'
-Plugin 'bitc/vim-hdevtools'
+" setup from haskell-vim-now:
+" https://github.com/begriffs/haskell-vim-now/blob/master/.vimrc
+Plugin 'Shougo/vimproc.vim'
+Plugin 'neovimhaskell/haskell-vim'
 Plugin 'eagletmt/neco-ghc'
-Plugin 'raichoo/haskell-vim'
-Plugin 'Twinside/vim-haskellConceal'
+Plugin 'eagletmt/ghcmod-vim'
+Plugin 'Twinside/vim-hoogle'
+Plugin 'bitc/vim-hdevtools'
+Plugin 'mpickering/hlint-refactor-vim'
 
 " Idris
 Plugin 'idris-hackers/idris-vim'
@@ -91,6 +96,10 @@ Plugin 'promela.vim'
 
 " Dafny
 Plugin 'mlr-msft/vim-loves-dafny'
+
+" Scribble (Racket documentation)
+Plugin 'wlangstroth/vim-racket'
+Plugin 'vim-scripts/scribble.vim'
 
 " --------------------
 " Language syntax
@@ -122,6 +131,9 @@ Plugin 'gerw/vim-latex-suite'
 " F*
 Plugin 'FStarLang/VimFStar'
 
+" SML
+Plugin 'cypok/vim-sml'
+
 " Random languages
 Plugin 'salinasv/vim-vhdl'
 Plugin 'applescript.vim'
@@ -133,3 +145,8 @@ Plugin 'dag/vim-fish'
 " Vim enhancements
 " ------------------
 Plugin 'godlygeek/tabular'
+
+" Drawing
+Plugin 'DrawIt'
+" Outlining
+Plugin 'VimOutliner'

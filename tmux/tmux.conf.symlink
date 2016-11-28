@@ -58,8 +58,9 @@ bind l select-pane -R
 
 # List of plugins
 # Supports `github_username/repo` or full git URLs
-set -g @tpm_plugins "              \
-  tmux-plugins/tpm                 \
-  tmux-plugins/tmux-sensible       \
-  tmux-plugins/tmux-resurrect      \
-"
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/sensible'
+set -g @plugin 'seebi/tmux-colors-solarized'
+set -g @colors-solarized 'light'
+
+run '~/.tmux/plugins/tpm/tpm'

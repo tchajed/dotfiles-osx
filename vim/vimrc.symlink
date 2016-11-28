@@ -74,3 +74,5 @@ let g:localvimrc_whitelist='/Users/tchajed/code/mit-pdos/.*'
 
 syntax on
 filetype indent plugin on
+
+let mapleader=","
