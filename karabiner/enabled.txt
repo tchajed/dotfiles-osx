@@ -1,0 +1,12 @@
+Enable the following settings:
+
+Fn+Esc to Caps Lock
+MouseButton4 and MouseButton5 to move left/right a space
+
+Cmd-Play to F13 for remapping + Happy Hacking Keyboard bindings only for HHK
+
+Fn+LeftClick to MiddleClick
+
+Control_L to Control_L (+ When you type Control_L only, send Escape)
+
+Application Key to Eject
